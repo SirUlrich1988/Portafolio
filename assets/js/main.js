@@ -1,6 +1,6 @@
 const navBar = document.getElementById('navBar')
 const btnMenu = document.getElementById('btnMenu')
-const heroMenu = document.getElementById('heroMenu')
+const heroMenu = document.getElementById('zovalMenu')
 const sections = document.querySelectorAll('section[id]')
 const form = document.getElementById('form')
 
@@ -19,7 +19,7 @@ btnMenu.addEventListener('click', function () {
 })
 
 heroMenu.addEventListener('click', function (e) {
-  if (e.target.matches('.hero__nav-link')) {
+  if (e.target.matches('.zoval_nav-link')) {
     heroMenu.classList.remove('active')
   }
 })
