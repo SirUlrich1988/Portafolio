@@ -24,6 +24,8 @@ heroMenu.addEventListener('click', function (e) {
   }
 })
 
+navBar.addEventListener('scroll', )
+
 /* Secciones con ID */
 window.addEventListener('scroll', function (e) {
   const scrollY = window.pageYOffset
