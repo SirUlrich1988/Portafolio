@@ -40,7 +40,7 @@ a {
 .zoval {
     width: 100%;
     height: 100vh;
-    background-image: url(https://www.wallpapertip.com/wmimgs/81-816112_tech-wallpaper-iphone-x.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1116905.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,6 +207,7 @@ a {
 .arthas_texto {
     margin: 0;
     font-size: clamp(1rem, 2vw, 1.5rem);
+    text-shadow: 1px 1px 15px #000;
     /* border: 1px solid red; */
   }
   
@@ -235,7 +236,7 @@ a {
   .seccion-hab {
     width: 100%;
     padding-top: 100px;
-    background-image: url(https://www.wallpapertip.com/wmimgs/81-816112_tech-wallpaper-iphone-x.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1116905.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -245,7 +246,7 @@ a {
   .seccion-contac {
     width: 100%;
     padding-top: 100px;
-    background-image: url(https://www.wallpapertip.com/wmimgs/81-816112_tech-wallpaper-iphone-x.jpg);
+    background-image: url(https://wallpaperaccess.com/full/1116905.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -297,14 +298,13 @@ a {
 
   .tarjeta__interior {
     text-align: center;
-    color:rgb(234, 231, 238);
-    text-decoration: underline;
+    color:rgb(0, 255, 13);
     font-size: 20px;
   }
 
   .tarjeta__interior i {
     font-size: 70px;
-    color: rgb(238, 233, 245);
+    color: rgb(247, 244, 243);
   }
 
   @media (min-width: 600px) {
@@ -323,12 +323,19 @@ a {
   }
 
 .btn-curriculum button  {
-  color: white;
+  /* color: white;
   background-color:rgb(16, 4, 62, 0.4);
   border-radius: 10px solid;
   margin-bottom: 10px;
   height: 50px;
-  width: 100px;
+  width: 100px; */
+  padding: 15px;
+  background-color: rgba(25, 24, 24, 0.708);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: rgb(0, 255, 4);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .contenedor-academlo img {
@@ -416,7 +423,7 @@ a {
   
   input.btn-form  {
     padding: 15px;
-    background-color: rgba(3, 8, 138, 0.701);
+    background-color: rgba(25, 24, 24, 0.708);
     border: 1px solid transparent;
     border-radius: 8px;
     color: rgb(0, 255, 4);
