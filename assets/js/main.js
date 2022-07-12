@@ -24,32 +24,33 @@ heroMenu.addEventListener('click', function (e) {
   }
 })
 
-navBar.addEventListener('scroll', )
+// navBar.addEventListener('scroll', )
 
 /* Secciones con ID */
-window.addEventListener('scroll', function (e) {
-  const scrollY = window.pageYOffset
+// window.addEventListener('scroll', function (e) {
+//   const scrollY = window.pageYOffset
 
-  for (const section of sections) {
-    const sectionHeight = section.offsetHeight
-    const sectionTop = section.offsetTop - 58
-    const sectionId = section.getAttribute('id')
+//   for (const section of sections) {
+//     const sectionHeight = section.offsetHeight
+//     const sectionTop = section.offsetTop - 58
+//     const sectionId = section.getAttribute('id')
 
-    const current = document.querySelector('.hero__nav-link[href*=' + sectionId + ']')
+//     const current = document.querySelector('.hero__nav-link[href*=' + sectionId + ']')
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      current.classList.add('active')
-    } else {
-      current.classList.remove('active')
-    }
-  }
-})
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       current.classList.add('active')
+//     } else {
+//       current.classList.remove('active')
+//     }
+//   }
+// })
 
 /* Formulario */
 form.addEventListener('submit', async (e) => {
   e.preventDefault()
 
-  const email = 'your@email.com'
+  const email = 'luisern29@gmail.com'
+  // alert ('Enviado')
   const URL_BASE = `https://formsubmit.co/${email}`
 
   const input = e.currentTarget.elements
@@ -69,10 +70,10 @@ form.addEventListener('submit', async (e) => {
   }
 
   /* con then y catch */
-  fetch(URL_BASE, options)
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+  // fetch(URL_BASE, options)
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(error => console.log(error))
 
   /* Con async / await */
   try {
