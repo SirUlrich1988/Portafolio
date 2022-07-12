@@ -80,6 +80,7 @@ form.addEventListener('submit', async (e) => {
     const res = await fetch(URL_BASE, options)
     const data = await res.json()
     console.log(data)
+    e.currentTarget.reset()
   } catch (error) {
     console.log(error)
   }
