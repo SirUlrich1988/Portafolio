@@ -46,12 +46,12 @@ heroMenu.addEventListener('click', function (e) {
 // })
 
 /* Formulario */
-form.addEventListener('submit', async (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault()
 
   const email = 'luisern29@gmail.com'
   // alert ('Enviado')
-  const URL_BASE = `https://formsubmit.co/${email}`
+  const URL_BASE = `https://formsubmit.co/ajax/${email}`
 
   const input = e.currentTarget.elements
   const formData = {
@@ -60,21 +60,18 @@ form.addEventListener('submit', async (e) => {
     message: input.message.value
   }
 
-  const options = {
-    method: 'POST',
-    header: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json'
+  fetch(URL_BASE, {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
     },
     body: JSON.stringify(formData)
-  }
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
 
-  try {
-    const res = await fetch(URL_BASE, options)
-    const data = await res.json()
-    console.log(data)
-  } catch (error) {
-    console.log(error)
-  }
+  console.log(formData)
   e.currentTarget.reset()
 })
